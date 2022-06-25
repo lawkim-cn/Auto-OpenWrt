@@ -44,3 +44,9 @@ pushd luci-app-openclash/tools/po2lmo
 make && sudo make install
 popd
 
+# Add luci-app-adguardhome
+
+git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+
+
+
