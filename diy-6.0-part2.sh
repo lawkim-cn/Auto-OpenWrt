@@ -50,6 +50,6 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app
 
 # Modify default banner
 rm -rf package/base-files/files/etc/banner
-cp -f ~/work/Auto-OpenWrt/Auto-OpenWrt/banner package/base-files/files/etc/banner
+cp -f ~/actions-runner/_work/Auto-OpenWrt/Auto-OpenWrt/banner package/base-files/files/etc/banner
 
 
