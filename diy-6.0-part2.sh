@@ -45,7 +45,7 @@ make && sudo make install
 popd
 
 # Add luci-app-adguardhome
-cd ~/work/Auto-OpenWrt/Auto-OpenWrt/openwrt
+cd ~/actions-runner/_work/Auto-OpenWrt/Auto-OpenWrt/openwrt
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 
 # Modify default banner
