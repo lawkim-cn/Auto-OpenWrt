@@ -49,13 +49,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        if [ -d $PWD/openwrt ]; then
-          cd openwrt
-          git checkout .
-          git pull --rebase
-        else
-          git clone $REPO_URL -b $REPO_BRANCH openwrt
-        fi
+        git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         
     - name: luci-theme-argon install
@@ -194,3 +188,7 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Remove old Artifacts
+      run: |
+        rm -rf /workdir/*
