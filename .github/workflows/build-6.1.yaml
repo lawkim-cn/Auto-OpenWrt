@@ -51,6 +51,7 @@ jobs:
         df -hT $PWD
         if [ -d $PWD/openwrt ]; then
           cd openwrt
+          git checkout .
           git pull --rebase
         else
           git clone $REPO_URL -b $REPO_BRANCH openwrt
