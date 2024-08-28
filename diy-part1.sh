@@ -14,11 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-#echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-#echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-
+echo 'src-git kiddin9 https://github.com/kiddin9/openwrt-packages' >>feeds.conf.default
 
 
 ####### 科学上网插件 #######
@@ -27,4 +23,5 @@
 
 
 ####### darkmatter主题 #######
-# echo 'src-git darkmatter git://github.com/apollo-ng/luci-theme-darkmatter.git' >>feeds.conf.default
+echo 'src-git argon git://github.com/jerrykuku/luci-theme-argon.git' >>feeds.conf.default
+echo 'src-git design git://github.com/kenzok78/luci-theme-design.git' >>feeds.conf.default
